@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+*{
+    font-family: 'Lilita One', sans-serif;
+}
+
+body{
+    background: url(https://free4kwallpapers.com/uploads/originals/2022/04/08/sunset-on-a-desert-with-a-starry-sky-wallpaper.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1{
+font-size: 50px;
+text-align: center;
+color: #fff;
+padding-bottom: 20px;
+border-bottom: 4px solid #00ff22;
+}
+
+.login-container{
+    backdrop-filter: blur(8px);
+    width: 400px;
+    padding: 20px;
+    border: 5px solid #00ff22;
+    border-radius: 5px;
+}
+
+.inputs{
+    width: 350px;
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.checkbox-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.checkbox-label{
+    margin-left: 5px;
+}
+
+.forgot-password{
+    text-align: right;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+.forgot-password a:hover{
+    color:#ddd
+}
+
+.login-btn{
+    width: 100%;
+    padding: 10px;
+    background-color: #00ff22;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.login-btn:hover{
+    background-color: #003cff;
+    color: #fff;
+}
+
+.register-text{
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 15px;
+}
+
+.register-text:hover{
+    color: #ddd;
+}
+
+.hidden{
+    display: none;
+}

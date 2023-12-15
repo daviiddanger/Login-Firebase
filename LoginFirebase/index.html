@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Tr-Android</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <!--Formulario de inicio de sesion-->
+        <form id="loginForm">
+            <h1>Iniciar Sesión</h1>
+            <input type="email" class="inputs" id="email" placeholder="Correo Electronico" autocomplete="off">
+            <input type="password" class="inputs" id="password" placeholder="contraseña" required>
+            <div class="checkbox-container">
+                <input type="checkbox" id="remember" >
+                <label for="remember" class="checkbox-label" >Recordar</label>
+            </div>
+            <div class="forgot-password">
+                <a href="#">¿Olvidaste tu contraseña?</a>
+            </div>
+            <button type="submit" class="login-btn" id="loginButton">Iniciar Sesión</button>
+            <div class="register-text">
+                ¿No tienes cuenta? <a href="#" onclick="toggleForms()">Regístrate</a>
+            </div>
+        </form>
+
+        <!--Formulario de registro-->
+
+        <form id="registerForm" class="hidden">
+            <h1>Registrate</h1>
+            <input type="text" class="inputs" id="full_name" placeholder="Nombre"  required autocomplete="off">
+            <input type="mail" class="inputs" id="emailR" placeholder="Correo Electronico" autocomplete="off">
+            <input type="password" class="inputs" id="passwordR" placeholder="Contraseña" required>
+            <button type="submit" class="login-btn" id="registerButton">Registrar</button>
+            <div class="register-text">
+                ¿Ya tienes cuenta? <a href="#" onclick="toggleForms()">Iniciar Sesión</a>
+            </div>
+        </form>
+    </div>
+<!--ya que estamos aqui xD esto es para firebase -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script> 
+
+
+<!-- Our script must be loaded after firebase references -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>
